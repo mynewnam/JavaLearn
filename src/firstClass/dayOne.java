@@ -11,5 +11,7 @@ public class dayOne {
         Student person = new Student("Amy", 6, "2021010617");
         person.getAge();
         person.fly();
+
+        System.out.println("hello git!");
     }
 }
