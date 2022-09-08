@@ -13,5 +13,6 @@ public class dayOne {
         person.fly();
 
         System.out.println("hello git!");
+        System.out.println("hello git3!");
     }
 }
