@@ -2,9 +2,7 @@ package CollectionLearn;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
+import java.util.*;
 
 /**
  * @author: liunairui
@@ -20,7 +18,7 @@ public class CollectionTest {
         coll.add(123);
         coll.add(new Date());
 
-        System.out.println(coll.size());
+//        System.out.println(coll.size());
 
         Collection coll1 = new ArrayList();
 
@@ -28,10 +26,16 @@ public class CollectionTest {
         coll1.add(145);
         coll.addAll(coll1);
 
-        System.out.println(coll.size());
-        System.out.println(coll);
+        Iterator iterator = coll.iterator();
 
-        coll.clear();
-        System.out.println();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        for (Object obj: coll) {
+            System.out.println(obj);
+        }
+
     }
+
 }
