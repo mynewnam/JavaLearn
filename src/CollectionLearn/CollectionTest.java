@@ -35,7 +35,6 @@ public class CollectionTest {
         for (Object obj: coll) {
             System.out.println(obj);
         }
-
     }
 
 }
